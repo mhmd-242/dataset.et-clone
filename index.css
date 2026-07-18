@@ -1,0 +1,203 @@
+:root {
+    --bg-primary: #000;
+    --bg-secondary: #0a0a0f;
+    --bg-tertiary: #111119;
+    --font-color-primary: #ededf0;
+    --font-color-secondary: #a78bfa;
+    --font-color-tertiary: #1a1a2a;
+    --font-color-quaternary: #1f1f2e;
+    --font-color-quinary: #69697D;
+    --border : #1a1a2a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-primary);
+    padding-top: 22dvh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 9.5rem;
+    border: 0.5px solid var(--border);
+    border-radius: 200px;
+    padding: 0.5rem 0;
+    opacity: 0.8;
+}
+header nav .logo img {
+    width: 10rem;
+}
+header nav .links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .links ul li a {
+    display: inline-block;
+    padding: 8.5px 18px;
+    text-decoration: none;
+    color: var(--font-color-primary);
+    font-size: 0.9rem;
+}
+header nav .links a:hover {
+    background-color: var(--border);
+    border-radius: 20px;
+}
+header nav .cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 0.5rem;
+}
+header nav .cta a:first-child {
+    text-decoration: none;
+    color: var(--font-color-primary);
+    padding-right: 1rem;
+    font-size: 0.9rem;
+}
+header nav .cta a:first-child:hover {
+    color: var(--font-color-secondary);
+}
+header nav .cta .mode{
+    height: 30px;
+    width: 30px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .cta a:last-child {
+    height: 30px;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 0.5rem;
+    color: var(--font-color-secondary);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 0 1rem;
+    background-color: var(--bg-tertiary);
+}
+header nav .cta a p {
+    font-size: 0.9rem;
+}
+header nav .cta a img  {
+    width: 1.2rem;
+}
+header nav .cta a:last-child:hover img{
+    transform: translate(2px, -2px);
+}
+.section1 {
+    margin: 0 9.5rem;
+}
+.section1 .section1-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section1 .section1-wrapper .parent1 .top {
+    color: var(--font-color-secondary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    background-color: var(--bg-tertiary);
+}
+.section1 .section1-wrapper .parent1 .c1 {
+    margin: 2rem 0;
+}
+.section1 .section1-wrapper .parent1 .c1 h1 {
+    font-size: 4rem;
+    color: var(--font-color-primary);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.section1 .section1-wrapper .parent1 .c1 h1 span {
+    color: var(--font-color-secondary);
+}
+.section1 .section1-wrapper .parent1 .c1 h3 {
+    color: var(--font-color-quinary);
+    font-size: 1rem;
+}
+.section1 .section1-wrapper .parent1 .c2 ul {
+    list-style: none;
+    display: flex;
+    gap: 0 1rem;
+}
+.section1 .section1-wrapper .parent1 .c2 ul a {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+.section1 .section1-wrapper .parent1 .c2 ul li:first-child a {
+    background-color: var(--font-color-secondary);
+    color: var(--font-color-tertiary);
+    display: flex;
+    align-items: center;
+    gap:0 0.6rem;
+}
+.section1 .section1-wrapper .parent1 .c2 ul li:first-child a img {
+    width: 1rem;
+}
+.section1 .section1-wrapper .parent1 .c2 ul li:first-child a:hover img {
+    transform: translateX(2px);
+}
+.section1 .section1-wrapper .parent1 .c2 ul li:last-child a {
+    border: 1px solid var(--border);
+    color: var(--font-color-quinary);
+}
+.section1 .section1-wrapper .parent1 .c2 ul li:last-child a:hover {
+    color: var(--font-color-primary);
+}
+.section1 .section1-wrapper .parent1 .c3 {
+    margin: 3.5rem 0;
+    display: flex;
+    gap: 0 2rem;
+    color: var(--font-color-primary);
+}
+.section1 .section1-wrapper .parent1 .c3 h3 {
+    font-size: 1.5rem;
+    color: var(--font-color-primary);
+    margin-bottom: 0.4rem;
+}
+.section1 .section1-wrapper .parent1 .c3 p {
+    color: var(--font-color-quinary);
+    font-size: 0.9rem;
+}
+.section1 .section1-wrapper .parent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .section1-wrapper .parent2 .animation {
+    padding: 170px;
+    background-color: var(--font-color-secondary);
+    border-radius: 50%;
+}
+.section2 {
+    margin: 4rem 9.5rem;
+    background-color: white;
+}
+.section2 .section2-wrapper .parent1 {
+    margin: 2rem 0;
+    text-align: center;
+}
+.section2 .section2-wrapper .parent1 p:first-child {
+    color: var(--font-color-secondary);
+}
