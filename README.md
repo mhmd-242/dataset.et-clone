@@ -1,4 +1,4 @@
-# 🇪🇹 Dataset.et — Clone
+# Dataset.ET (Clone)
 
 A front-end clone of [dataset.et](https://dataset.et), an Ethiopian AI dataset platform focused on preserving local languages and powering intelligence through community-driven data collection.
 
@@ -20,7 +20,6 @@ dataset-et-clone/
 ├── Assets/          # Images, SVG icons, and logos
 ├── index.html       # Main HTML file
 ├── style.css        # Stylesheet
-├── script.js        # JavaScript functionality
 └── README.md
 ```
 
