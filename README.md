@@ -16,7 +16,7 @@ This project is built purely for **learning and practice** — recreating the UI
 ## Project Structure
 
 ```
-dataset-et-clone/
+dataset.et-clone/
 ├── Assets/          # Images, SVG icons, and logos
 ├── index.html       # Main HTML file
 ├── style.css        # Stylesheet
