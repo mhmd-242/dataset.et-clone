@@ -23,6 +23,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 header nav {
     display: flex;
@@ -244,7 +245,7 @@ header nav .cta a:last-child:hover img{
     margin-bottom: 2rem;
 }
 .section2 .section2-wrapper .parent2 > div p:last-child {
-    padding-top: 2rem; /* I really dont know what happened here but it worked including the next line */
+    padding-top: 2rem; 
     margin-bottom: 0;
     border-top: 1px solid var(--border);
 }
@@ -282,6 +283,7 @@ header nav .cta a:last-child:hover img{
     background-color: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: 1.5rem;
+    transition: .2s all ease;
 }
 .section3 .section3-wrapper .parent2 > div > p {
     color: var(--font-color-quinary);
@@ -319,6 +321,12 @@ header nav .cta a:last-child:hover img{
 .section3 .section3-wrapper .parent2 > div:hover {
     background-color: var(--font-color-quaternary);
     transform: translateY(-5px);
+}
+.section3 .section3-wrapper .parent2 > div:hover {
+    border: 1px solid var(--font-color-secondary);
+}
+.section3 .section3-wrapper .parent2 > div:hover .info p {
+    border: 1px solid var(--font-color-secondary);
 }
 .section3 .section3-wrapper .parent3 {
     text-align: center;
@@ -391,7 +399,7 @@ header nav .cta a:last-child:hover img{
 .section4 .section4-wrapper .parent2 .child p:last-child {
     color: var(--font-color-quinary);
 }
-.section4 .section4-wrapper .parent2 .child:not(:last-child) ::after {
+.section4 .section4-wrapper .parent2 .child:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 32px;
@@ -399,5 +407,218 @@ header nav .cta a:last-child:hover img{
     width: 220px;
     height: 1px;
     background: var(--border);
-    z-index: 1;
+    z-index: -1;
+}
+.section5 .section5-wrapper {
+    margin: 6rem 9.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.section5 .section5-wrapper .parent1 {
+    position: sticky;
+    top: 0;
+}
+.section5 .section5-wrapper .parent1 p:first-child {
+    color: var(--font-color-secondary);
+    margin-bottom: 1rem;
+}
+.section5 .section5-wrapper .parent1 h3 {
+    font-size: 2.5rem;
+    color: var(--font-color-primary);
+    margin-bottom: 1rem;
+}
+.section5 .section5-wrapper .parent1 h3 span{
+    font-size: 2.5rem;
+    color: var(--font-color-secondary);
+}
+.section5 .section5-wrapper .parent1 p:nth-child(3) {
+    color: var(--font-color-quinary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.section5 .section5-wrapper .parent1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--font-color-tertiary);
+    background-color: var(--font-color-secondary);
+    border-radius: 2rem;
+    width: 256px;
+    height: 40px;
+    transition: .2s all ease;
+}
+.section5 .section5-wrapper .parent1 a:hover {
+    transform: scale(1.1);
+}
+.section5 .section5-wrapper .parent1 a:hover img {
+    transform: translate(2px, -2px);
+}
+.section5 .section5-wrapper .parent2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.section5 .section5-wrapper .parent2 > div {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: .2s all ease;
+}
+.section5 .section5-wrapper .parent2 > div div:has(img) {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-tertiary);
+    border-radius: 1rem;
+}
+.section5 .section5-wrapper .parent2 > div h3 {
+    color: var(--font-color-primary);
+}
+.section5 .section5-wrapper .parent2 > div p {
+    color: var(--font-color-quinary);
+}
+.section5 .section5-wrapper .parent2 > div:hover {
+    transform: scale(1.05);
+    transform: translateY(-5px);
+    border: 1px solid var(--font-color-secondary);
+}
+.section5 .section5-wrapper .parent2 > div:hover div:has(img) {
+    background-color: var(--font-color-secondary);
+}
+.section6 {
+    background-color: var(--bg-tertiary);
+    padding: 10rem 0;
+}
+.section6 .section6-wrapper {
+    margin: 0 9.5rem;
+    background-color: var(--bg-secondary);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section6 .section6-wrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 6rem 0;
+}
+.section6 .section6-wrapper div p:first-child {
+    color: var(--font-color-secondary);
+    margin-bottom: 2.3rem;
+}
+.section6 .section6-wrapper div h3 {
+    color: var(--font-color-primary);
+    font-size: 2.5rem;
+}
+.section6 .section6-wrapper div h3:nth-child(3) {
+    color: var(--font-color-secondary);
+    margin-bottom: 1.7rem;
+}
+.section6 .section6-wrapper div p:nth-child(4) {
+    text-align: center;
+    color: var(--font-color-quinary);
+    margin-bottom: 2.8rem;
+}
+.section6 .section6-wrapper div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--font-color-tertiary);
+    background-color: var(--font-color-secondary);
+    border-radius: 2rem;
+    width: 240px;
+    height: 43px;
+    transition: .2s all ease;
+    margin-bottom: 1.7rem;
+}
+.section6 .section6-wrapper div > a:hover img {
+    transform: translateX(2px);
+}
+.section6 .section6-wrapper div p:last-child {
+    color: var(--font-color-quinary);
+}
+.section6 .section6-wrapper div p:last-child a {
+    color: var(--font-color-quinary);
+    font-weight: bold;
+}
+footer .footer-wrapper {
+    margin: 5rem 9.5rem;
+}
+footer .footer-wrapper .parent1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 4rem;
+}
+footer .footer-wrapper .parent1 div > img {
+    width: 16rem;
+}
+footer .footer-wrapper .parent1 > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .footer-wrapper .parent1 > div:first-child p {
+    color: var(--font-color-quinary);
+    font-size: 0.96rem;
+}
+footer .footer-wrapper .parent1 > div:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-wrapper .parent1 > div:last-child p {
+    color: var(--font-color-secondary);
+    margin-bottom: 1rem;
+}
+footer .footer-wrapper .parent1 > div:last-child ul {
+    list-style: none;
+}
+footer .footer-wrapper .parent1 > div:last-child ul li {
+    margin-bottom: 1rem;
+}
+footer .footer-wrapper .parent1 > div:last-child ul a {
+    text-decoration: none;
+    color: var(--font-color-quinary);
+    font-size: 1rem;
+}
+footer .footer-wrapper .parent1 > div:last-child ul a:has(img) {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    text-decoration: none;
+    color: var(--font-color-quinary);
+}
+footer .footer-wrapper .parent1 > div:last-child ul a:has(img) img {
+    width: 1.3rem;
+}
+footer .footer-wrapper .parent1 > div:last-child ul a:hover {
+    color: var(--font-color-primary);
+}
+footer .footer-wrapper .parent2 {
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-wrapper .parent2 p {
+    color: var(--font-color-quinary);
+}
+footer .footer-wrapper .parent2 p a {
+    text-decoration: none;
+    color: var(--font-color-primary);
+}
+footer .footer-wrapper .parent2 p a:hover {
+    color: var(--font-color-secondary);
 }
