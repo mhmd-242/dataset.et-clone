@@ -18,7 +18,7 @@ This project is built purely for **learning and practice** — recreating the UI
 ```
 dataset.et-clone/
 ├── Assets/          # Images, SVG icons, and logos
-├── designs/         # Reference screenshots (desktop, tablet, mobile)
+├── Designs/         # Reference screenshots (desktop, tablet, mobile)
 ├── index.html       # Main HTML file
 ├── index.css        # Stylesheet
 └── README.md
